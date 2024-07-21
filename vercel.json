@@ -1,9 +1,11 @@
 {
     "version": 2,
-    "rewrites": [
-        { "source": "/api/(.*)", "destination": "/$1" },
-        { "source": "/(.*)", "destination": "/index.html" }
+    "routes": [
+      { "handle": "filesystem" },
+      { "src": "/api/(.*)", "dest": "/api/$1" },
+      { "src": "/login", "dest": "/api/login" },
+      { "src": "/logout", "dest": "/api/logout" },
+      { "src": "/(.*)", "dest": "/index.html" }
     ]
-}
-      
+  }
 
