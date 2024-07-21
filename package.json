@@ -4,7 +4,8 @@
   "description": "Simple Node.js Express app with authentication",
   "main": "api/server.js",
   "scripts": {
-    "start": "node api/server.js"
+    "start": "node api/server.js",
+    "dev": "node --watch --env-file=.env api/server"
   },
   "keywords": [],
   "author": "",
