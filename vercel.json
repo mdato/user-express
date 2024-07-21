@@ -2,9 +2,6 @@
     "version": 2,
     "rewrites": [
       {
-        "handle": "filesystem"
-      },
-      {
         "source": "/api/(.*)",
         "destination": "/api/$1"
       },
