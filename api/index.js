@@ -39,16 +39,16 @@ app.post('/login', (req, res) => {
     isLoggedIn = true;
     res.redirect('/hidden'); // Redirigir a la página de acceso permitido
   } else {
-    res.send('Clave incorrecta. <a href="/">Volver</a>'); // Mostrar mensaje de clave incorrecta
+    res.send('Invalid key. <a href="/">Back</a>'); // Mostrar mensaje de clave incorrecta
   }
 });
 
 // Ruta para la página de acceso permitido
 app.get('/hidden', checkAuth, (req, res) => {
   res.send(`
-    <p>Usuario ingresado correctamente.</p>
+    <p>User logged in successfully.</p>
     <form action="/logout" method="POST">
-      <button type="submit">Cerrar sesión</button>
+      <button type="submit">Log out</button>
     </form>
   `);
 });
@@ -69,5 +69,5 @@ const PORT = process.env.PORT || 3000;
 
 // Iniciar el servidor
 app.listen(PORT, () => {
-  console.log(`Servidor corriendo en http://localhost:${PORT}`);
+  console.log(`Server is running at: http://localhost:${PORT}`);
 });
