@@ -15,5 +15,5 @@ Full Stack Web Developer
 
 About this Project:
 -------------------
-* 🌍  Project based in Express, genius-lyrics
+* 🌍  Project based in Express
 * 🖥️  link to this app: [deploy-vercel](https://loginexpress.vercel.app/)
