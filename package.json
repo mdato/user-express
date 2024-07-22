@@ -2,10 +2,10 @@
   "name": "user-express",
   "version": "1.0.0",
   "description": "Simple Node.js Express app with authentication",
-  "main": "api/server.js",
+  "main": "api/index.js",
   "scripts": {
-    "start": "node api/server.js",
-    "dev": "node --watch --env-file=.env api/server"
+    "start": "node api/index.js",
+    "dev": "node --watch --env-file=.env api/index.js"
   },
   "keywords": [],
   "author": "",
